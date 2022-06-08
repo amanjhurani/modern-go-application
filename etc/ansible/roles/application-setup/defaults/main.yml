@@ -1,0 +1,12 @@
+---
+# Default application name
+app_name: app
+
+# Default deployment and application user
+app_user_name: app
+
+# Default SSH authorized keys for the application user
+app_user_authorized_keys: []
+
+# Default server name for nginx proxy
+app_server_name: application.local
