@@ -1,0 +1,24 @@
+run:
+    skip-dirs:
+        - .gen
+        - pkg/kitx/tracing/opentelemetry
+
+    skip-files:
+        - ".*_gen\\.go$"
+
+linters-settings:
+    golint:
+        min-confidence: 0.1
+    goimports:
+        local-prefixes: github.com/sagikazarmark/modern-go-application
+
+linters:
+    enable-all: true
+    disable:
+        - funlen
+        - maligned
+        - wsl
+        - gomnd
+
+        # Drives todos nuts
+        - godox

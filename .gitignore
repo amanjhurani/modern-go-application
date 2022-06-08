@@ -1,0 +1,26 @@
+/bin/
+/build/
+/config.*
+!config.toml.dist
+/docker-compose.override.yml
+/.env
+/.env.test
+pkged.go
+/var/
+/vendor/
+
+# IDE integration
+/.vscode/*
+!/.vscode/launch.json
+!/.vscode/tasks.json
+/.idea/*
+!/.idea/codeStyles/
+!/.idea/copyright/
+!/.idea/dataSources.xml
+!/.idea/*.iml
+!/.idea/externalDependencies.xml
+!/.idea/go.imports.xml
+!/.idea/modules.xml
+!/.idea/runConfigurations/
+!/.idea/scopes/
+!/.idea/sqldialects.xml
