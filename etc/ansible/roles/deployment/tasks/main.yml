@@ -1,0 +1,16 @@
+---
+-
+    name: Start application
+    become: true
+    become_user: "{{ app_user_name }}"
+    docker_container:
+        name: "{{ app_name }}"
+        image: "{{ app_image }}:{{ app_version }}"
+        state: started
+        pull: true
+        env_file: "{{ app_config_path }}/etc/{{ app_name }}.env"
+        ports:
+            - "127.0.0.1:8000:8000"
+            - "127.0.0.1:10000:10000"
+        volumes:
+            - "{{ app_config_path }}/etc/{{ app_name }}.toml:/config.toml:ro"

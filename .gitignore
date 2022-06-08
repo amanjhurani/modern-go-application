@@ -1,0 +1,11 @@
+/.direnv/
+/bin/
+/build/
+/config.*
+!config.toml.dist
+!config.yaml.dist
+/docker-compose.override.yml
+/.env
+/.env.test
+/var/
+/vendor/
